@@ -8,6 +8,7 @@
   "author": "Nicky Cen <nickycen74@gmail.com>",
   "main": "server/app.js",
   "scripts": {
-    "heroku-postbuild": "cd server && npm install && npm audit fix && node app.js && cd .. && cd client && npm install && npm audit fix && npm run build"
+    "start": "cd server && npm install && node app.js",
+    "heroku-postbuild": "cd client && npm install && npm audit fix && npm run build"
   }
 }
