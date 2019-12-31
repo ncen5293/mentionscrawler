@@ -9,6 +9,6 @@
   "main": "server/app.js",
   "scripts": {
     "heroku-prebuild": "cd client && npm install && npm audit fix && npm run build && cd .. && cd server && npm install",
-    "start": "cd server && node app.js",
+    "start": "node server/app.js"
   }
 }
