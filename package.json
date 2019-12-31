@@ -1,4 +1,11 @@
 {
+  "name": "mentionscrawler",
+  "version": "0.1.0",
+  "engines": {
+    "node": "12.6.0"
+  },
+  "description": "Let users find mentions of their companies",
+  "author": "Nicky Cen <nickycen74@gmail.com>",
   "main": "server/app.js",
   "scripts": {
     "heroku-prebuild": "cd client && npm install && npm audit fix && npm run build && cd .. && cd server && npm install",
