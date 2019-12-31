@@ -15,7 +15,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <SnackbarProvider maxSnack={3}>
         <BrowserRouter>
-          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/" component={Login} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
