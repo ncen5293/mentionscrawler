@@ -73,7 +73,7 @@ app.use(function(err, req, res, next) {
   res.status(401).send({ success: false, error: err });
 });
 
-const server = app.listen(4000, () => {
+const server = app.listen(process.env.PORT || 4000, () => {
   console.log("Server running on port 4000!");
 });
 
