@@ -85,7 +85,7 @@ const Navbar = ({
       setPosition("fixed");
     } else if (location === "/settings") {
       setShowSearch(true);
-    } else if (location === "/login") {
+    } else if (location === "/login" || location === "/") {
       setRedirect(`/register${history.location.search}`);
       setLoginRegisterName("Sign Up");
       setLoginRegisterMessage("Don't have an account?");
